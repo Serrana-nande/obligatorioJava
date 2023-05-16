@@ -1,0 +1,61 @@
+public class Ejercicio3 {
+	
+	public static void main(String[] args) {
+		
+		int ano = (int) (Math.random() * (2023-1900+1)+1900);
+		int mes = (int) (Math.random() * 12)+1;
+		int dia = (int) (Math.random() * 31)+1;
+		
+		System.out.println(ano);
+		System.out.println(mes);
+		System.out.println(dia);
+		
+		zodiaco(dia,mes,ano);
+	}
+
+	public static void zodiaco (int dia, int mes, int ano) {
+		
+		if (mes == 3 && dia >=21 || mes == 4 && dia <=19 )
+
+			System.out.println("La persona es de Aries");
+		else if (mes == 4 && dia >=20 || mes == 5 && dia <=20 )
+
+			System.out.println("La persona es de Tauro");
+		else if (mes == 5 && dia >=21 || mes == 6 && dia <=20 )
+
+			System.out.println("La persona es de Geminis");
+		else if (mes == 6 && dia >=21 || mes == 7 && dia <=22 )
+
+			System.out.println("La persona es de Cancer");
+		else if (mes == 7 && dia >=23 || mes == 8 && dia <=22 )
+
+			System.out.println("La persona es de Leo");
+		else if (mes == 8 && dia >=23 || mes == 9 && dia <=22 )
+
+			System.out.println("La persona es de Virgo");
+		else if (mes == 9 && dia >=23 || mes == 10 && dia <=22 )
+
+			System.out.println("La persona es de Libra");
+		else if (mes == 10 && dia >=23 || mes == 11 && dia <=21 )
+
+			System.out.println("La persona es de Escorpio");
+		else if (mes == 11 && dia >=22 || mes == 12 && dia <=21 )
+
+			System.out.println("La persona es de Sagitario");
+		else if (mes == 12 && dia >=22 || mes == 1 && dia <=19 )
+
+			System.out.println("La persona es de Capricornio");
+		else if (mes == 1 && dia >=20 || mes == 2 && dia <=18 )
+
+			System.out.println("La persona es de Acuario");
+		else if (mes == 2 && dia >=19 || mes == 3 && dia <=20 )
+
+			System.out.println("La persona es de Piscis");
+		else if (dia == 29 && mes==2 && ano %4 ==0)
+
+			System.out.println("La persona es de Piscis");
+		else 
+			System.out.println("La fecha no es valida");
+	}
+
+}
